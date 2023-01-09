@@ -2,8 +2,8 @@
 
 **mctl** is a command line utility that can be used to consume messages from a queue and store them in a database. Additionally it can be used to also fetch the stored messages and delete them if needed. Currently the tool supports AWS SQS and DynamoDB.
 
-Messages are stored in a table named "Messages". If a table with that name does not exist already it will be created.
-Some other static configurations such as queue name, aws endpoint and region are currently hard-coded just to keep usage in the context of the assignment simple. In it's current form it can be easily extended to be separated out to work with a config file or source if needed.
+Messages are stored in a table named "Messages". If a table with that name does not exist already, it will be created.
+Some other static configurations such as queue name, aws endpoint and region are currently hard-coded, just to keep usage in the context of the assignment simple. In it's current form it can be easily extended to be separated out to work with a config file or source if needed.
 
 
 ## Requirements ##
