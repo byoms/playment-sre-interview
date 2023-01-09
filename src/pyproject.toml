@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "mctl"
 version = "0.1.0"
 authors = [
-  { name="Byomakesh Maharana", email="author@example.com" },
+  { name="Byomakesh Maharana", email="byomakeshmaharana@gmail.com" },
 ]
 description = "A command line utility to process messages from Queue systems"
 readme = "README.md"
