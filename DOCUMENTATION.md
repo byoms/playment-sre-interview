@@ -109,13 +109,3 @@ make uninstall
 make clean
 ```
 
----
-
-## Notes ##
-
-  - Learning localstack
-  - Fix docker-compose
-  - Learning SQS and DynamoDB
-  - CLI tool
-  - Documentation
-  - Makefile
