@@ -5,6 +5,11 @@
 Messages are stored in a table named "Messages". If a table with that name does not exist already it will be created.
 Some other static configurations such as queue name, aws endpoint and region are currently hard-coded just to keep usage in the context of the assignment simple. In it's current form it can be easily extended to be separated out to work with a config file or any desired external source if needed.
 
+### A note on the database ###
+
+DynamoDB (running as a container) is employed as per suggested preferences. Although standalone docker image of it was available, for simplicity **localstack itself was used** to serve the purpose. It has been explicitly specified in the **same** `docker-compose.yml`.
+
+---
 
 ## Requirements ##
 
