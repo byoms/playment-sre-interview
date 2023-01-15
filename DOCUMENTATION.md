@@ -82,7 +82,7 @@ mctl [OPTIONS] COMMAND [ARGS]
 
 | Command      |  Description |
 | ----------- | --------------------|
-| consume      | Consume messages from queue and store in DB <br/>`-c, --count`<br/><ensp> Specify message count (**required**) |
+| consume      | Consume messages from queue and store in DB <br/>&nbsp;&nbsp;`-c, --count`<br/>&nbsp;&nbsp;&nbsp;&nbsp; Specify message count (**required**) |
 | show   | Show all messages currently stored in DB |
 | clear  | Clear all stored messages from DB |
 
