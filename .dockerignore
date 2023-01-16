@@ -1,0 +1,10 @@
+assignment/
+.git/
+.gitignore
+Makefile
+MANIFEST.in
+*.md
+docker-compose.yml
+Dockerfile
+
+# export mctl="docker run --rm -ti mctl"
