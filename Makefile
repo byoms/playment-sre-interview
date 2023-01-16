@@ -22,3 +22,6 @@ uninstall: dependencies
 
 clean:
 	rm -r $(BUILD)
+
+docker-image:
+	docker build -t mctl:0.1.0 -t mctl:latest .

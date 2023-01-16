@@ -28,6 +28,13 @@ apt update && apt install -y python3-pip python3-venv python3-distutils
 
 ## Installation ##
 
+Download
+
+```
+# download
+git clone https://github.com/byoms/playment-sre-interview/tree/subm/byomakesh-m
+```
+
 ### Building from source and installing locally ###
 
 **Important pre-requisite:**
@@ -40,19 +47,35 @@ export PATH="$HOME/.local/bin:$PATH"
 
 and add the same to you shell initialisation config file for permanent configuration.
 
-### A note on the installation hygiene ###
+#### A note on the installation hygiene ####
 
 The above is **important** and is **required** for the installation to work. This is by design because especially in case of python installing packages at the system level can break system utilities that use python. Additionally, this also avoids requiring superuser privileges. The tool and related dependencies will be installed at the user account level. Furthermore as `pipx` is used internally for installation, it is sandboxed into a separate environment and avoid conflicts even locally!
 
-### Installation steps ###
+#### Installation steps ####
 
 ```
-# download
-git clone https://github.com/byoms/playment-sre-interview/tree/subm/byomakesh-m
 # install locally
 cd ./playment-sre-interview/
 make install
 ```
+
+### Using Docker ###
+
+#### Building the image ####
+
+```
+# docker build
+cd ./playment-sre-interview/
+make docker-image
+```
+
+and add the following alias to your respective shell configs:
+
+```
+alias mctl='docker run --rm --name mctl-cli -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY --network=host -it mctl'
+```
+
+start a new session for the alias change to reflect i.e `mctl` to be discoverable.
 
 
 ## Configuration ##
